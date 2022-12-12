@@ -13,6 +13,7 @@ body {
   padding-top: 30px;
 }
 .header__logo {
+  margin: 10px;
   width: 100%;
   max-height: 150px;
 }
@@ -56,7 +57,7 @@ body {
   padding: 30px;
   max-width: 80%;
   margin: 50px auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .text__title {
   margin-top: 0;
@@ -76,6 +77,7 @@ body {
 }
 
 .research {
+  color: #344E66;
   margin: 50px;
   display: grid;
   gap: 30px;
@@ -84,12 +86,12 @@ body {
 .research__area {
   text-align: center;
   background-color: #CDE5E8;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
   transition: all 0.3s;
 }
 .research__area:hover, .research__area:active, .research__area:visited {
   color: #344E66;
-  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
+  box-shadow: 0 8px 17px rgba(70, 50, 210, 0.2);
   transform: translateY(-3px);
 }
 .research__image {
@@ -118,7 +120,7 @@ body {
   padding: 30px;
   max-width: 80%;
   margin: 50px auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .news__sections {
   display: grid;
@@ -157,7 +159,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .partner__logo {
   max-width: 200px;
@@ -177,13 +179,14 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .positions__title {
+  margin: 20px;
   text-align: center;
   font-size: 22px;
 }
 .positions__area {
   text-align: center;
   background-color: #CDE5E8;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .positions__image {
   padding: 30px;
@@ -203,7 +206,7 @@ body {
 .member {
   margin: 50px auto;
   max-width: 30%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .member__image {
   background-color: #FFFFFF;
@@ -236,7 +239,7 @@ body {
 }
 .members__card {
   background-color: #CDE5E8;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .members__image {
   background-color: #FFFFFF;
@@ -272,7 +275,7 @@ body {
   padding: 30px;
   text-align: center;
   background-color: #CDE5E8;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .assistants__name {
   margin-top: 0;
@@ -287,7 +290,7 @@ body {
   padding: 30px;
   max-width: 50%;
   margin: 50px auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .students__title {
   margin-top: 0;
@@ -311,7 +314,7 @@ body {
   padding: 30px;
   max-width: 50%;
   margin: 50px auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .alumni__title {
   margin-top: 0;
