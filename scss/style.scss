@@ -94,7 +94,6 @@ body {
 }
 
 .research {
-    color: $primary;
     margin: 50px;
     display: grid;
 	gap: 30px;
@@ -102,7 +101,6 @@ body {
 
     &__area {
         text-align: center;
-        background-color: $sections;
         box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
         transition: all 0.3s;
 
@@ -130,6 +128,7 @@ body {
     }
 
     &__link {
+        color: $primary;
         text-decoration: none;
 
         &:visited {

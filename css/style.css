@@ -77,7 +77,6 @@ body {
 }
 
 .research {
-  color: #344E66;
   margin: 50px;
   display: grid;
   gap: 30px;
@@ -85,7 +84,6 @@ body {
 }
 .research__area {
   text-align: center;
-  background-color: #CDE5E8;
   box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
   transition: all 0.3s;
 }
@@ -109,6 +107,7 @@ body {
   padding: 30px;
 }
 .research__link {
+  color: #344E66;
   text-decoration: none;
 }
 .research__link:visited {
