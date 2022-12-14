@@ -211,6 +211,7 @@ body {
   max-height: 220px;
   position: relative;
   padding: 10px;
+  border-bottom: 3px solid #F1F8F9;
 }
 .member__image img {
   display: block;
@@ -250,9 +251,7 @@ body {
   height: 170px;
   position: relative;
   padding: 10px;
-}
-.members__image--border {
-  height: 160px;
+  border-bottom: 3px solid #F1F8F9;
 }
 .members__image img {
   display: block;
@@ -263,9 +262,6 @@ body {
      object-fit: cover;
   border-radius: 50%;
   border: 3px solid #F1F8F9;
-}
-.members__image--border img {
-  border: none;
 }
 .members__text {
   padding: 30px;
@@ -347,6 +343,25 @@ body {
 }
 .alumni__text--last {
   margin-bottom: 0;
+}
+
+.publications {
+  margin: 50px;
+  padding: 20px;
+  background-color: #CDE5E8;
+}
+.publications__title {
+  text-align: center;
+  font-size: 22px;
+}
+.publications__title--first {
+  margin-top: 50px;
+}
+.publications__link {
+  color: #344E66;
+}
+.publications img {
+  width: 100%;
 }
 
 .main::after {

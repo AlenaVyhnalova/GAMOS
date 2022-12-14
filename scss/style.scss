@@ -246,6 +246,7 @@ body {
         max-height: 220px;
         position: relative;
         padding: 10px;
+        border-bottom: 3px solid $background;
     }
 
     &__image img {
@@ -290,10 +291,7 @@ body {
         height: 170px;
         position: relative;
         padding: 10px;
-    }
-
-    &__image--border {
-        height: 160px;
+        border-bottom: 3px solid $background;
     }
 
     &__image img {
@@ -304,10 +302,6 @@ body {
         object-fit: cover;
         border-radius: 50%;
         border: 3px solid $background;
-    }
-
-    &__image--border img {
-        border: none;
     }
 
     &__text {
@@ -403,6 +397,29 @@ body {
 
     &__text--last {
         margin-bottom: 0;
+    }
+}
+
+.publications {
+    margin: 50px;
+    padding: 20px;
+    background-color: $sections;
+
+    &__title {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    &__title--first {
+        margin-top: 50px;
+    }
+
+    &__link {
+        color: $primary;
+    }
+
+    img {
+        width: 100%;
     }
 }
 
