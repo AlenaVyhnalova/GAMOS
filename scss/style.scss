@@ -11,7 +11,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -74,6 +75,7 @@ body {
         list-style: none;
         margin: 0;
         padding: 0;
+        background-color: #FFFFFF;
 
         @media screen and (min-width: 700px) {
             display: flex !important;
@@ -503,7 +505,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: flex-end;
 
-
     &__title {
         font-weight: 600;
     }
@@ -522,8 +523,6 @@ body {
         padding: 0;
     }
 
-  
-
     &__link {
         color: $background;
 
@@ -536,5 +535,27 @@ body {
         max-width: 100%;
         max-height: 70px;
         padding: 0;
+        margin-top: 10px;
+    }
+
+    @media screen and (min-width: 720px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        &__menu {
+            text-align: center;
+        }
+
+        &__middleright {
+            justify-self: end;
+        }
+
+        &__right {
+            justify-self: end;
+            text-align: center;
+        }
     }
 }

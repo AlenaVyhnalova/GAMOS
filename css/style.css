@@ -4,7 +4,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -67,6 +68,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #FFFFFF;
 }
 @media screen and (min-width: 700px) {
   .menu__list {
@@ -471,4 +473,25 @@ body {
   max-width: 100%;
   max-height: 70px;
   padding: 0;
+  margin-top: 10px;
+}
+@media screen and (min-width: 720px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .footer__menu {
+    text-align: center;
+  }
+  .footer__middleright {
+    justify-self: end;
+  }
+  .footer__right {
+    justify-self: end;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
