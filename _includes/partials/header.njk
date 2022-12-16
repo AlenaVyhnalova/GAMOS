@@ -1,13 +1,20 @@
 <header class="header">
     <a href="/"><img class="header__logo" src="/images/logo_gamos.svg" alt="Logo"></a>
 
-    <h1 class="header__title">Group of Advanced Materials and Organic Synthesis</h1>
+    <nav class="menu">
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+		<label for="menu-checkbox" class="menu__toggler">☰</label>
 
-    <ul class="header__menu">
-        <li><a class="header__link" href="/">Home</a></li>
-        <li><a class="header__link" href="/research/">Research</a></li>
-        <li><a class="header__link" href="/publications/">Publications</a></li>
-        <li><a class="header__link" href="/members/">Members</a></li>
-        <li><a class="header__link" href="/joinus/">Join us!</a></li>
-    </ul>
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === '' }}" href="/">Home</a></li>
+
+            <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === 'research' }}" href="/research/">Research</a></li>
+
+            <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === 'publications' }}" href="/publications/">Publications</a></li>
+
+            <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === 'members' }}" href="/members/">Members</a></li>
+
+            <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === 'joinus' }}" href="/joinus/">Join us!</a></li>
+        </ul>
+    </nav>
 </header>
