@@ -146,7 +146,17 @@ body {
   margin: 50px;
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 700px) {
+  .research {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .research {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 .research__area {
   text-align: center;
@@ -235,35 +245,29 @@ body {
   color: #344E66;
 }
 
-.positions {
-  text-align: center;
-  margin: 0 50px;
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-.positions__title {
-  margin: 20px;
+.publications__title {
   text-align: center;
   font-size: 22px;
 }
-.positions__area {
-  text-align: center;
+.publications__title--first {
+  margin-top: 50px;
+}
+.publications__section {
+  margin: 50px;
+  padding: 20px;
+  background-color: #CDE5E8;
   box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
-.positions__image {
-  padding: 30px;
-  max-width: 100%;
-  background-color: #FFFFFF;
+.publications__section p {
+  margin: 0;
 }
-.positions__image img {
+.publications__link {
+  color: #344E66;
+}
+.publications img {
   width: 100%;
-  aspect-ratio: 3/2;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.positions__text {
-  padding: 30px;
+  max-height: 300px;
+  margin: 10px auto;
 }
 
 .leader {
@@ -416,23 +420,35 @@ body {
   margin-bottom: 0;
 }
 
-.publications {
-  margin: 50px;
-  padding: 20px;
-  background-color: #CDE5E8;
+.positions {
+  text-align: center;
+  margin: 0 50px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.publications__title {
+.positions__title {
+  margin: 20px;
   text-align: center;
   font-size: 22px;
 }
-.publications__title--first {
-  margin-top: 50px;
+.positions__area {
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
-.publications__link {
-  color: #344E66;
+.positions__image {
+  padding: 30px;
+  max-width: 100%;
+  background-color: #FFFFFF;
 }
-.publications img {
+.positions__image img {
   width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.positions__text {
+  padding: 30px;
 }
 
 .main::after {
