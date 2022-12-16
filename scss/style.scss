@@ -285,14 +285,31 @@ body {
         padding: 20px;
         background-color: $sections;
         box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
+
+        @media screen and (min-width: 600px) {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            align-items: center;
+        }
     }
 
     &__section p {
         margin: 0;
     }
 
+    @media screen and (min-width: 600px) {
+        &__section--text {
+            display: block;
+        }
+    }
+
     &__link {
         color: $primary;
+    }
+
+    &__arrow {
+        text-decoration: none;
     }
 
     img {
@@ -304,7 +321,7 @@ body {
 
 .leader {
     display: grid;
-    margin: 50px;
+    margin: 50px auto;
     max-width: 400px;
 
     &__wrapper {
@@ -421,7 +438,40 @@ body {
     background-color: $sections;
     padding: 30px;
     max-width: 50%;
-    margin: 50px auto;
+    margin: 0 auto 50px auto;
+    box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
+
+    &__title {
+        margin-top: 0;
+        display: inline-block;
+        border-bottom: 2px solid $decoration;
+    }
+
+    &__name {
+        margin: 0;
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    &__text--last {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 600px) {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.alumni {
+    background-color: $sections;
+    padding: 30px;
+    max-width: 50%;
+    margin: 0 auto 50px auto;
     box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 
     &__title {
@@ -445,31 +495,13 @@ body {
     }
 }
 
-.alumni {
-    background-color: $sections;
-    padding: 30px;
-    max-width: 50%;
-    margin: 50px auto;
-    box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
-
-    &__title {
-        margin-top: 0;
-        display: inline-block;
-        border-bottom: 2px solid $decoration;
-    }
-
-    &__name {
-        margin: 0;
-    }
-
-    &__text {
-        margin-top: 0;
-        margin-bottom: 30px;
-        font-size: 14px;
-    }
-
-    &__text--last {
-        margin-bottom: 0;
+.others {
+    @media screen and (min-width: 600px) {
+        max-width: 50%;
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
     }
 }
 

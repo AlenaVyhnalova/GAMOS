@@ -258,11 +258,27 @@ body {
   background-color: #CDE5E8;
   box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
+@media screen and (min-width: 600px) {
+  .publications__section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
+  }
+}
 .publications__section p {
   margin: 0;
 }
+@media screen and (min-width: 600px) {
+  .publications__section--text {
+    display: block;
+  }
+}
 .publications__link {
   color: #344E66;
+}
+.publications__arrow {
+  text-decoration: none;
 }
 .publications img {
   width: 100%;
@@ -272,7 +288,7 @@ body {
 
 .leader {
   display: grid;
-  margin: 50px;
+  margin: 50px auto;
   max-width: 400px;
 }
 .leader__wrapper {
@@ -376,7 +392,7 @@ body {
   background-color: #CDE5E8;
   padding: 30px;
   max-width: 50%;
-  margin: 50px auto;
+  margin: 0 auto 50px auto;
   box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .students__title {
@@ -395,12 +411,18 @@ body {
 .students__text--last {
   margin-bottom: 0;
 }
+@media screen and (min-width: 600px) {
+  .students {
+    display: flex;
+    gap: 30px;
+  }
+}
 
 .alumni {
   background-color: #CDE5E8;
   padding: 30px;
   max-width: 50%;
-  margin: 50px auto;
+  margin: 0 auto 50px auto;
   box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .alumni__title {
@@ -418,6 +440,16 @@ body {
 }
 .alumni__text--last {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .others {
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
 }
 
 .positions {
