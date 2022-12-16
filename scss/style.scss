@@ -235,12 +235,18 @@ body {
     }
 }
 
-.member {
-    position: relative;
-    margin: 50px auto;
+.leader {
+    display: grid;
+    margin: 50px;
     max-width: 400px;
-    background-image: linear-gradient(to top, $sections, $background);
-    box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
+
+    &__wrapper {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        background-image: linear-gradient(to top, $sections, $background);
+        box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
+    }
 
     &__image {
         max-height: 220px;

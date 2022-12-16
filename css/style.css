@@ -200,20 +200,25 @@ body {
   padding: 30px;
 }
 
-.member {
-  position: relative;
-  margin: 50px auto;
+.leader {
+  display: grid;
+  margin: 50px;
   max-width: 400px;
+}
+.leader__wrapper {
+  position: relative;
+  margin: 0;
+  width: 100%;
   background-image: linear-gradient(to top, #CDE5E8, #F1F8F9);
   box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
-.member__image {
+.leader__image {
   max-height: 220px;
   position: relative;
   padding: 10px;
   border-bottom: 3px solid #F1F8F9;
 }
-.member__image img {
+.leader__image img {
   display: block;
   max-width: 250px;
   margin: 0 auto;
@@ -223,15 +228,15 @@ body {
   border-radius: 50%;
   border: 3px solid #F1F8F9;
 }
-.member__text {
+.leader__text {
   padding: 30px;
   text-align: center;
   background-color: #CDE5E8;
 }
-.member__name {
+.leader__name {
   margin-top: 0;
 }
-.member__link {
+.leader__link {
   display: block;
   color: #344E66;
 }
