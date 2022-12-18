@@ -443,8 +443,16 @@ body {
 
     &__title {
         margin-top: 0;
-        display: inline-block;
-        border-bottom: 2px solid $decoration;
+        text-align: center;
+    }
+
+    &__title::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        margin-top: 10px;
     }
 
     &__msc, &__bsc {
@@ -495,8 +503,16 @@ body {
 
     &__title {
         margin-top: 0;
-        display: inline-block;
-        border-bottom: 2px solid $decoration;
+        text-align: center;
+    }
+
+    &__title::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        margin-top: 10px;
     }
 
     &__wrapper {
