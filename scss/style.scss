@@ -437,7 +437,7 @@ body {
 .students {
     background-color: $sections;
     padding: 30px;
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto 50px auto;
     box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 
@@ -447,30 +447,39 @@ body {
         border-bottom: 2px solid $decoration;
     }
 
+    &__msc, &__bsc {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: space-between;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    &__msc {
+        margin-bottom: 30px;
+    }
+
+    &__card {
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+    }
+
     &__name {
         margin: 0;
     }
 
     &__text {
-        margin-top: 0;
-        margin-bottom: 30px;
+        margin: 0;
         font-size: 14px;
-    }
-
-    &__text--last {
-        margin-bottom: 0;
-    }
-
-    @media screen and (min-width: 600px) {
-        display: flex;
-        gap: 30px;
     }
 }
 
 .alumni {
     background-color: $sections;
     padding: 30px;
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto 50px auto;
     box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 
@@ -480,28 +489,28 @@ body {
         border-bottom: 2px solid $decoration;
     }
 
+    &__wrapper {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: space-between;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    &__card {
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+    }
+
     &__name {
         margin: 0;
     }
 
     &__text {
-        margin-top: 0;
-        margin-bottom: 30px;
+        margin: 0;
         font-size: 14px;
-    }
-
-    &__text--last {
-        margin-bottom: 0;
-    }
-}
-
-.others {
-    @media screen and (min-width: 600px) {
-        max-width: 50%;
-        margin: auto;
-        display: flex;
-        align-items: flex-start;
-        gap: 30px;
     }
 }
 
