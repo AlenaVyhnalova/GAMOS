@@ -252,27 +252,23 @@ body {
 .publications__title--first {
   margin-top: 50px;
 }
-.publications__section {
+.publications__sections {
   margin: 50px;
+  display: grid;
+  gap: 50px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+}
+.publications__section {
   padding: 20px;
   background-color: #CDE5E8;
   box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
-@media screen and (min-width: 600px) {
-  .publications__section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 30px;
-    align-items: center;
-  }
-}
 .publications__section p {
   margin: 0;
 }
-@media screen and (min-width: 600px) {
-  .publications__section--text {
-    display: block;
-  }
+.publications__section--text {
+  display: block;
 }
 .publications__link {
   color: #344E66;

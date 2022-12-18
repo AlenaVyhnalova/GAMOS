@@ -280,29 +280,29 @@ body {
         margin-top: 50px;
     }
 
-    &__section {
+    &__sections {
         margin: 50px;
+        display: grid;
+        gap: 50px;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+    }
+
+    &__section {
         padding: 20px;
         background-color: $sections;
         box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
-
-        @media screen and (min-width: 600px) {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 30px;
-            align-items: center;
-        }
     }
 
     &__section p {
         margin: 0;
     }
 
-    @media screen and (min-width: 600px) {
-        &__section--text {
-            display: block;
-        }
+
+    &__section--text {
+        display: block;
     }
+    
 
     &__link {
         color: $primary;
