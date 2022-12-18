@@ -416,6 +416,16 @@ body {
   text-align: center;
   margin: 0;
 }
+.students__card img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #F1F8F9;
+}
 .students__name {
   margin: 0;
 }

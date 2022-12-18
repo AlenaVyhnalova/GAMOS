@@ -466,6 +466,16 @@ body {
         margin: 0;
     }
 
+    &__card img {
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid $background;
+    }
+
     &__name {
         margin: 0;
     }
