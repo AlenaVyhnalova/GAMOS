@@ -50,6 +50,17 @@ body {
 }
 
 .menu {
+    margin: 0;
+
+    @media screen and (min-width: 700px) {
+        margin: 30px;
+    }
+
+    @media screen and (min-width: 1100px) {
+        margin: 50px;
+    }
+
+
     &__checkbox {
         position: absolute;
         left: -9999px;
@@ -76,28 +87,29 @@ body {
         position: fixed;
         right: 0;
         z-index: 3;
+        width: 100%;
         margin: 0;
         padding: 0;
-        background-color: #FFFFFF;
+        background-color: $background;
+        text-align: center;
 
         @media screen and (min-width: 700px) {
             display: flex !important;
-            margin: 50px;
             position: static;
+            background-color: #FFFFFF;
         }
     }
 
     &__link {
         text-decoration: none;
-        color: $decoration;
+        color: $primary;
         font-size: 18px;
         font-weight: 600;
         display: inline-block;
-        border-bottom: 2px solid $primary;
-        padding: 10px;
+        padding: 10px 10px 5px 10px;
 
         @media screen and (min-width: 700px) {
-            padding-left: 30px;
+            padding: 15px 15px 10px 15px;
         }
 
         &:hover, &:active {
@@ -131,11 +143,20 @@ body {
     padding: 30px;
     max-width: 80%;
     margin: 50px auto;
-    box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 
     &__title {
         margin-top: 0;
         font-size: 20px;
+    }
+
+    &__title--research::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        margin-top: 10px;
     }
 
     &__paragraph {
@@ -212,7 +233,7 @@ body {
     padding: 30px;
     max-width: 80%;
     margin: 50px auto;
-    box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 
     &__sections {
         display: grid;
@@ -291,21 +312,27 @@ body {
     &__section {
         padding: 20px;
         background-color: $sections;
-        box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     }
 
     &__section p {
         margin: 0;
     }
 
-
     &__section--text {
         display: block;
     }
-    
 
-    &__link {
-        color: $primary;
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        background-color: $primary;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
     &__arrow {
