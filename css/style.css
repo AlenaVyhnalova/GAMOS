@@ -367,7 +367,6 @@ body {
 }
 .members__card {
   background-image: linear-gradient(to top, #CDE5E8, #F1F8F9);
-  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .members__image {
   height: 170px;
@@ -385,6 +384,9 @@ body {
   border-radius: 50%;
   border: 3px solid #F1F8F9;
 }
+.members__title {
+  font-size: 12px;
+}
 .members__text {
   padding: 30px;
   text-align: center;
@@ -398,33 +400,11 @@ body {
   color: #344E66;
 }
 
-.assistants {
-  margin: 50px auto;
-  max-width: 80%;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-.assistants__card {
-  padding: 30px;
-  text-align: center;
-  background-color: #CDE5E8;
-  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
-}
-.assistants__name {
-  margin-top: 0;
-}
-.assistants__link {
-  display: block;
-  color: #344E66;
-}
-
 .students {
   background-color: #CDE5E8;
   padding: 30px;
   max-width: 60%;
   margin: 0 auto 50px auto;
-  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
 .students__title {
   margin-top: 0;
@@ -438,16 +418,12 @@ body {
   background-color: #FFFFFF;
   margin-top: 10px;
 }
-.students__msc, .students__bsc {
+.students__wrapper {
   margin: 0;
   padding: 0;
   display: grid;
   justify-content: space-between;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-.students__msc {
-  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
 .students__card {
   display: inline-block;
@@ -469,21 +445,20 @@ body {
 }
 .students__text {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
-.alumni {
+.alumni, .assistants {
   background-color: #CDE5E8;
   padding: 30px;
   max-width: 60%;
   margin: 0 auto 50px auto;
-  box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 }
-.alumni__title {
+.alumni__title, .assistants__title {
   margin-top: 0;
   text-align: center;
 }
-.alumni__title::after {
+.alumni__title::after, .assistants__title::after {
   content: "";
   display: block;
   width: 100%;
@@ -491,7 +466,7 @@ body {
   background-color: #FFFFFF;
   margin-top: 10px;
 }
-.alumni__wrapper {
+.alumni__wrapper, .assistants__wrapper {
   margin: 0;
   padding: 0;
   display: grid;
@@ -499,17 +474,20 @@ body {
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
-.alumni__card {
+.alumni__card, .assistants__card {
   display: inline-block;
   text-align: center;
   margin: 0;
 }
-.alumni__name {
+.alumni__name, .assistants__name {
   margin: 0;
 }
-.alumni__text {
+.alumni__text, .assistants__text {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
+}
+.alumni__link, .assistants__link {
+  color: #344E66;
 }
 
 .positions {

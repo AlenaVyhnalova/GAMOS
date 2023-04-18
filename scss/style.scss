@@ -404,7 +404,6 @@ body {
     
     &__card {
         background-image: linear-gradient(to top, $sections, $background);
-        box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
     }
 
     &__image {
@@ -424,34 +423,14 @@ body {
         border: 3px solid $background;
     }
 
+    &__title {
+        font-size: 12px;
+    }
+
     &__text {
         padding: 30px;
         text-align: center;
         background-color: $sections;
-    }
-
-    &__name {
-        margin-top: 0;
-    }
-
-    &__link {
-        display: block;
-        color: $primary;
-    }
-}
-
-.assistants {
-    margin: 50px auto;
-    max-width: 80%;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    
-    &__card {
-        padding: 30px;
-        text-align: center;
-        background-color: $sections;
-        box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
     }
 
     &__name {
@@ -469,7 +448,6 @@ body {
     padding: 30px;
     max-width: 60%;
     margin: 0 auto 50px auto;
-    box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 
     &__title {
         margin-top: 0;
@@ -485,17 +463,12 @@ body {
         margin-top: 10px;
     }
 
-    &__msc, &__bsc {
+    &__wrapper {
         margin: 0;
         padding: 0;
         display: grid;
         justify-content: space-between;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-
-    &__msc {
-        margin-bottom: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     }
 
     &__card {
@@ -520,16 +493,15 @@ body {
 
     &__text {
         margin: 0;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
-.alumni {
+.alumni, .assistants {
     background-color: $sections;
     padding: 30px;
     max-width: 60%;
     margin: 0 auto 50px auto;
-    box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
 
     &__title {
         margin-top: 0;
@@ -566,7 +538,11 @@ body {
 
     &__text {
         margin: 0;
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    &__link {
+        color: $primary;
     }
 }
 
