@@ -8,7 +8,7 @@ $decoration: #57A7B3;
 body {
     background-color: $background;
     color: $primary;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -20,7 +20,6 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     background-color: #FFFFFF;
-    padding-top: 30px;
     margin: 0;
 
     @media screen and (min-width: 700px) {
@@ -40,11 +39,11 @@ body {
         max-height: 100px;
 
         @media screen and (min-width: 700px) {
-            margin: 0;
+            margin: 20px;
         }
 
         @media screen and (min-width: 1100px) {
-            margin: 50px;
+            margin-left: 30px;
         }
     }
 }
@@ -53,13 +52,12 @@ body {
     margin: 0;
 
     @media screen and (min-width: 700px) {
-        margin: 30px;
+        margin: 20px;
     }
 
     @media screen and (min-width: 1100px) {
-        margin: 50px;
+        margin-right: 40px;
     }
-
 
     &__checkbox {
         position: absolute;
@@ -114,14 +112,14 @@ body {
 
         &:hover, &:active {
             color: $primary;
-            border-bottom: 2px solid $decoration;
+            border-bottom: 2px solid $primary;
         }
     }
 }
 
 .menu__link--active {
     color: $primary;
-    border-bottom: 2px solid $decoration;
+    border-bottom: 2px solid $primary;
 }
 
 .main::before {
@@ -136,6 +134,15 @@ body {
     margin: 50px;
     color: $primary;
     text-align: center;
+
+    &--special::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #FFFFFF;
+        margin-top: 10px;
+    }
 }
 
 .text {
@@ -149,7 +156,7 @@ body {
         font-size: 20px;
     }
 
-    &__title--research::after {
+    &__title--special::after {
         content: "";
         display: block;
         width: 100%;
@@ -291,6 +298,7 @@ body {
     &__title {
         text-align: center;
         font-size: 22px;
+        margin: 50px;
     }
 
     &__title--first {
@@ -564,13 +572,13 @@ body {
 
 .positions {
     &__title {
-        margin: 20px;
+        margin: 50px;
         text-align: center;
         font-size: 22px;
     }
 
     text-align: center;
-    margin: 0 50px;
+    margin: 50px;
     display: grid;
 	gap: 30px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -580,20 +588,13 @@ body {
         box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
     }
 
-    &__image {
-        padding: 30px;
-        max-width: 100%;
-        background-color: #FFFFFF;
-    }
-
-    &__image img {
-        width: 100%;
-        aspect-ratio: 3/2;
-        object-fit: contain;
-    }
-
     &__text {
         padding: 30px;
+
+        &--special {
+            background-color: $background;
+            box-shadow: 0 6px 15px rgba(72, 52, 212, 0.15);
+        }
     }
 }
 
