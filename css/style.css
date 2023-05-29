@@ -229,12 +229,22 @@ body {
      object-fit: contain;
   background-color: #FFFFFF;
 }
+.glide__text {
+  color: #F1F8F9;
+  background-color: #344E66;
+  text-align: center;
+  padding: 10px;
+  min-height: 150px;
+}
 .glide__link {
   color: #F1F8F9;
   background-color: #344E66;
   text-align: center;
   padding: 10px;
   display: block;
+}
+.glide__bullets {
+  margin-top: 50px;
 }
 
 .partner {

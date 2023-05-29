@@ -245,12 +245,24 @@ body {
     background-color: #FFFFFF;
    }
 
+   &__text {
+    color: $background;
+    background-color: $primary;
+    text-align: center;
+    padding: 10px;
+    min-height: 150px;
+   }
+
    &__link {
     color: $background;
     background-color: $primary;
     text-align: center;
     padding: 10px;
     display: block;
+    }
+
+    &__bullets {
+        margin-top: 50px;
     }
 }
 
