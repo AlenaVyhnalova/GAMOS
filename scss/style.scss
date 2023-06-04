@@ -249,20 +249,21 @@ body {
     background-color: #FFFFFF;
    }
 
-   &__text {
-    color: $background;
-    background-color: $primary;
-    text-align: center;
-    padding: 10px;
-    min-height: 150px;
-   }
-
    &__link {
     color: $background;
     background-color: $primary;
     text-align: center;
     padding: 10px;
     display: block;
+
+        &--text {
+            min-height: 85px;
+        }
+    }
+
+    &__span {
+        font-weight: normal;
+        font-style: italic;
     }
 
     &__bullets {
