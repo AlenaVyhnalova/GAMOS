@@ -246,7 +246,16 @@ body {
     width: 100%;
     aspect-ratio: 8/3;
     object-fit: contain;
+    object-position: center;
     background-color: #FFFFFF;
+   }
+
+   &__image {
+    padding: 40px;
+
+    &--bigger {
+        padding: 20px;
+    }
    }
 
    &__link {
